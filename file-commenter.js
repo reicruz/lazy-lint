@@ -45,19 +45,13 @@ function lint(path, eslintPath) {
     }
 
     if (ruleIds.length > 0) {
-      yield prependToFile(
-        `${path}`,
-        `${HEADER_COMMENT_LINES.todo}\n${HEADER_COMMENT_LINES.fixIssues}\n\n`
-      );
-
-      yield prependToFile(
-        `${path}`,
-        `\
-      /* eslint-disable
-      ${ruleIds.map(ruleId => `    ${ruleId},`).join('\n')}
-      */
-      `
-      );
+      const header = 
+`/* eslint-disable
+${ruleIds.map(ruleId => `  ${ruleId},`).join('\n')}
+*/
+${HEADER_COMMENT_LINES.todo}\n${HEADER_COMMENT_LINES.fixIssues}\n
+`
+      yield prependToFile(`${path}`, header);
     }
     return { error: null, messages };
   })();
