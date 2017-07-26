@@ -1,3 +1,5 @@
+'use strict';
+
 const yargs = require('yargs');
 const glob = require('glob');
 const fileCommenter = require('./file-commenter');

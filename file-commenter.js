@@ -1,3 +1,5 @@
+'use strict';
+
 const exec = require('mz/child_process').exec;
 const readFile = require('fs-promise').readFile;
 const writeFile = require('fs-promise').writeFile;
