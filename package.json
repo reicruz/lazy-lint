@@ -14,6 +14,10 @@
     "node": ">=7.10.0"
   },
   "author": "reicruz",
+  "maintainers": [
+    "Reinaldo Cruz <reinaldo422@gmail.com> (https://github.com/reicruz)",
+    "Naveed Nadjmabadi <naveed.nadjmabadi@gmail.com> (https://github.com/reicruz)"
+  ],
   "license": "ISC",
   "dependencies": {
     "fs-promise": "^2.0.3",
