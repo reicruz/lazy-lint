@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/reicruz/lazy-lint.git"
   },
   "engines": {
     "node": ">=7.10.0"
   },
-  "author": "",
+  "author": "reicruz",
   "license": "ISC",
   "dependencies": {
     "fs-promise": "^2.0.3",
