@@ -1,6 +1,6 @@
 {
   "name": "lazy-lint",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "description": "Disable failing eslint rules on individual files.",
   "main": "cli.js",
   "scripts": {
