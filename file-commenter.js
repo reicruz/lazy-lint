@@ -63,7 +63,7 @@ module.exports = function runEslint(jsFiles, eslintPath) {
   return Promise.coroutine(function* run(){
     console.log('Running lazy-lint on the following files...');
     console.log(jsFiles);
-    for (file of jsFiles) {
+    for (let file of jsFiles) {
       let eslintResults = yield lint(file, eslintPath);
       for (let message of eslintResults.messages) {
         console.log(message);
