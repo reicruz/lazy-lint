@@ -16,6 +16,7 @@
   "author": "reicruz",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.5.0",
     "fs-promise": "^2.0.3",
     "glob": "^7.1.2",
     "mz": "^2.6.0",
