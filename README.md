@@ -56,14 +56,14 @@ Add scripts to `package.json`
 
 ```
 "scripts": {
-	"precommit": "lint-staged",
-	"prepush": "eslint lib spec"
+  "precommit": "lint-staged",
+  "prepush": "eslint lib spec"
 }
 "lint-staged": {
-	"*.js": [
-		"prettier-eslint --write",
-		"git add"
-	]
+  "*.js": [
+    "prettier-eslint --write",
+    "git add"
+  ]
 }
 ```
 
